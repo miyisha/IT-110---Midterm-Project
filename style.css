@@ -1,0 +1,262 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #ffd6e8, #ffeef6);
+  color: #5a204e;
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  background: #ff9fcf;
+  border: 4px solid #ff6fb3;
+  border-radius: 18px;
+  margin: 20px;
+  padding: 30px 20px 20px;
+  text-align: center;
+  box-shadow: 0 8px 0 #ff6fb3;
+}
+
+/* logo container */
+.header-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* logo */
+.logo {
+  width: 180px;
+  max-width: 80vw;
+  height: auto;
+  display: block;
+}
+
+/* navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* links and buttons */
+nav a, 
+.bouncy-btn {
+  text-decoration: none;
+  background: white;
+  color: #d62881;
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: 3px solid #ffb3d9;
+  box-shadow: 0 4px 0 #ffb3d9;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* hover for buttons */
+nav a:hover, 
+.bouncy-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #ffb3d9;
+  background-color: #fff0f7;
+}
+
+nav a:active, 
+.bouncy-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #ffb3d9;
+}
+
+/* visible */
+a:focus-visible,
+button:focus-visible {
+  outline: 4px solid #5a204e;
+  outline-offset: 3px;
+}
+
+/* main */
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* section */
+section {
+  margin: 40px 20px;
+  scroll-margin-top: 160px;
+}
+
+section h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #d62881;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* home */
+#home {
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* cards */
+.card {
+  background: white;
+  border: 4px solid #ffb3d9;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 0 #ffb3d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  color: #6b2c5f;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: #4a1d40;
+}
+
+/* profile image */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffb3d9;
+  margin: 0 auto 15px auto;
+}
+
+/* grids */
+.members,
+.skills-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projects {
+  display: block;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.members .card,
+.projects-grid .card,
+.skills-grid .card {
+  flex: 1 1 280px;
+  max-width: 330px;
+}
+
+/* lists */
+ul {
+  list-style: "💗 ";
+  padding-left: 20px;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #4a1d40;
+}
+
+/* contact */
+#contact {
+  background: white;
+  border: 4px solid #ffb3d9;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 8px 0 #ffb3d9;
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: left;}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 12px;
+  color: #4a1d40;
+  padding-left: 20px; 
+}
+
+.contact-links {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+#contact a {
+  color: #d62881;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  background: #ff9fcf;
+  border-top: 4px solid #ff6fb3;
+  text-align: center;
+  padding: 20px;
+  color: #5a204e;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/* reponse */
+@media (max-width: 768px) {
+  .logo {
+    width: 140px;
+  }
+
+  section {
+    margin: 25px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 120px;
+  }
+
+  nav a {
+    padding: 8px 14px;
+  }
+}

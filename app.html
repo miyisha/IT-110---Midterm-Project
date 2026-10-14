@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" 
+        content = "width=device-width, initial-scale=1.0">
+  <title> Currency Converter - BellaTrix </title>
+  <link rel = "stylesheet" 
+        href = "style.css">
+</head>
+<body>
+
+<!-- header and navigation -->
+<header>
+    <div class = "header-title">
+      <h1><img src = "Website_LOGO.png" 
+               alt = "BellaTrix Logo" 
+               class = "logo"></h1>
+    </div>
+
+<nav>
+    <ul>
+        <li><a href = "index.html" 
+               class = "bouncy-btn"> Back to Portfolio </a></li>
+    </ul>
+</nav>
+</header>
+
+<!-- home -->
+<main>
+    <section>
+      <h2> Live Currency Converter </h2>
+
+      <div class = "card" 
+           style = "max-width: 500px; margin: 0 auto; text-align: left; padding: 30px 20px;">
+        <div style = "margin-bottom: 15px;">
+          <label for = "amount"  
+                 style = "display: block; margin-bottom: 8px; font-weight: 600;"> Amount: </label>
+          <input type = "number" 
+                 id = "amount" 
+                 value = "1" 
+                 min = "1" 
+                 style = "width: 100%; padding: 10px; border: 3px solid #ffb3d9; border-radius: 10px; box-sizing: border-box;">
+        </div>
+
+<!-- from convert -->
+        <div style = "display: flex; gap: 10px; margin-bottom: 15px;">
+          <div style = "flex: 1;">
+            <label for = "from-currency" 
+                   style = "display: block; margin-bottom: 8px; font-weight: 600;"> From: </label>
+            <select id = "from-currency" 
+                    style = "width: 100%; padding: 10px; border: 3px solid #ffb3d9; border-radius: 10px;">
+              
+              <option value = "USD"> USD - US Dollar </option>
+              <option value = "PHP" selected> PHP - Philippine Peso </option>
+              <option value = "EUR"> EUR - Euro </option>
+              <option value = "JPY"> JPY - Japanese Yen </option>
+              <option value = "GBP"> GBP - British Pound </option>
+              <option value = "CAD"> CAD - Canadian Dollar </option>
+            </select>
+          </div>
+
+<!-- to convert -->
+        <div style = "flex: 1;">
+            <label for = "to-currency" 
+                   style = "display: block; margin-bottom: 8px; font-weight: 600;"> To: </label>
+            <select id = "to-currency" 
+                    style = "width: 100%; padding: 10px; border: 3px solid #ffb3d9; border-radius: 10px;">
+              <option value = "USD" selected> USD - US Dollar </option>
+              <option value = "PHP"> PHP - Philippine Peso </option>
+              <option value = "EUR"> EUR - Euro </option>
+              <option value = "JPY"> JPY - Japanese Yen </option>
+              <option value = "GBP"> GBP - British Pound </option>
+              <option value = "CAD"> CAD - Canadian Dollar </option>
+            </select>
+          </div>
+        </div>
+
+<!-- convert  -->
+        <button id = "convert-btn" 
+                class = "bouncy-btn" 
+                style = "width: 100%; cursor: pointer;"> Convert </button>
+
+        <div id = "error-container" 
+             style="color: #d62828; text-align: center; font-weight: bold; margin-top: 15px;">
+        </div>
+
+        <div id = "result-container" 
+             style = "display: none; margin-top: 20px; border-top: 2px dashed #ffb3d9; padding-top: 15px; text-align: center;">
+          <h3 id = "result-text" 
+              style = "color: #d62881; margin: 0;"></h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- footer  -->
+  <footer>
+    <p> Created by: Pongautan, Jhaira Mae A. </p>
+    <p> &copy; 2026 BellaTrix </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
